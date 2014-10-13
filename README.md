@@ -4,6 +4,18 @@ This serves as a starting point for creating and collecting materials used in a 
 
 Start by downloading the files in the repository by clicking the button on the right. You really won't need a clone of the repository.
 
+It is recommended that you modify Drupal's .gitignore file if there is one to the following:
+
+````
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+
+# Ignore paths that contain user-generated content.
+sites/*/files/css
+sites/*/files/js
+sites/*/private
+````
+
 Unzip the files and rename the resulting directory according to the naming convention `demo-NAME-DRUPAL_VERSION`. For exmaple: `demo-services-7x`. Create a corresponding new GitHub repository, with the same name. And then link the two.
 
 Example:
@@ -27,3 +39,5 @@ Example:
 git add -A
 git commit -m "End of lesson 3."
 ````
+
+If you are cloning the repository, remember that there is no settings.php.
