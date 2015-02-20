@@ -4,7 +4,16 @@ This serves as a starting point for creating and collecting materials used in a 
 
 Start by downloading the files in the repository by clicking the button on the right. You really won't need a clone of the repository.
 
-Unzip the files and rename the resulting directory according to the naming convention `demo-NAME-DRUPAL_VERSION`. For example: `demo-services-7x`. Make this local directory a local git repository by running `git init`. Create a corresponding new GitHub repository, with the same name. And then link the two by adding the GitHub repository as a remote.
+Unzip the files and rename the resulting directory according to the naming convention `demo-NAME-DRUPAL_VERSION`. For example: `demo-services-7x`. Make this local directory a local git repository by running `git init`. Then add and commit these files to the local repository.
+
+Example:
+
+````
+git add *
+git commit -am "Creating new demo repository."
+````
+
+Create a corresponding new GitHub repository (https://github.com/organizations/DrupalizeMe/repositories/new), with the same name. And then link the two by adding the GitHub repository as a remote.
 
 Example:
 
