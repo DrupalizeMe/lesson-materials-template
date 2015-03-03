@@ -22,6 +22,18 @@ git remote add origin git@github.com:DrupalizeMe/demo-services-7x.git
 git push origin master
 ````
 
+##Update READMEs
+Once the new repo is set up, you should replace the instructor text in the README files with text appropriate for learners. The main root README (this document) should have the title of the series or video, and a listing of the lessons in a series. You should also list which versions of code you are using, like so:
+
+````
+Versions used in this series:
+- Drupal 7.34
+- Domain Access 7.x-3.11
+````
+
+The docroot and data README files include sample text for learners. The misc README can remain as it is unless there are additional files that need explanation for use or context.
+
+##Lesson Branches
 As you progress through the various lessons that make up your tutorial you'll need to create a new branch for each lesson. Branch names should be numbered according to the lesson which they apply to.
 
 Example:
