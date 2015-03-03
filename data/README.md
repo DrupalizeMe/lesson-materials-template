@@ -1,6 +1,6 @@
 ## What Is This?
 
-This directory contains database snapshots for various points throughout a tutorial. Likely each snapshot will correspond to an individual lesson. Snapshots should be named to that it's easy to figure out what lesson they correspond with.
+This directory contains database snapshots for various points throughout a tutorial. Likely each snapshot will correspond to an individual lesson. Snapshots should be named so that it's easy to figure out what lesson they correspond with.
 
 Example:
 
