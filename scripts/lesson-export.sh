@@ -14,11 +14,14 @@ mkdir -p './downloads';
 
 # Make sure we have all the remote branches.
 for remote in `git branch -r `; do
-  git branch --track $remote;
+  git co --track $remote;
 done
 
+git fetch --all
+git pull --all
+
 for branch in $(git for-each-ref --format='%(refname)' refs/heads/); do
-  file=`echo $branch | sed 's@refs/heads/origin/@@'`
+  file=`echo $branch | sed 's@refs/heads/@@'`
   echo "Exporting $file";
   mkdir -p ./downloads/$file;
   git archive $branch:docroot | tar -x -C ./downloads/$file;
